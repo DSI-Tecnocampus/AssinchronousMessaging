@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    stream:
+      function:
+        definition: receiveGreeting;receiveTime
+      bindings:
+        receiveGreeting-in-0:
+          destination: decoratedChannel
+        receiveTime-in-0:
+          destination: timeChannel
+          group: first

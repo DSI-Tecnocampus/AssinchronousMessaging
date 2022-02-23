@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        sendTime-out-0:
+          destination: timeChannel
+
