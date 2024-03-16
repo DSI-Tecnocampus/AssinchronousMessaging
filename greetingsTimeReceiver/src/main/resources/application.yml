@@ -1,11 +1,13 @@
 spring:
+  main:
+    web-application-type: none
   cloud:
+    function:
+      definition: receiveGreeting;receiveTime
     stream:
-      function:
-        definition: receiveGreeting;receiveTime
       bindings:
         receiveGreeting-in-0:
           destination: decoratedChannel
         receiveTime-in-0:
           destination: timeChannel
-          group: first
+          group: second

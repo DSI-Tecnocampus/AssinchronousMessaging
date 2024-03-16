@@ -1,4 +1,9 @@
+server:
+  port: 8081
+
 spring:
+  main:
+    web-application-type: none
   cloud:
     stream:
       bindings:
