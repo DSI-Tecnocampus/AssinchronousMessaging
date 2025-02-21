@@ -47,7 +47,7 @@ Run the services in the following order:
 2. Start one or more *greetingsTimeReceiver* services
     * `java -jar greetingsTimeReceiver/target/greetingsTimeReceiver-0.0.1-SNAPSHOT.jar` to run the first one with default parameters
     * `java -jar greetingsTimeReceiver/target/greetingsTimeReceiver-0.0.1-SNAPSHOT.jar` to run a second one with default parameters
-    * `java -Dspring.cloud.stream.bindings.timeChannel.group=pepA -jar greetingsTimeReceiver/target/greetingsTimeReceiver-0.0.1-SNAPSHOT.jar
+    * `java -Dspring.cloud.stream.bindings.receiveTime-in-0.group=pepe -jar greetingsTimeReceiver/target/greetingsTimeReceiver-0.0.1-SNAPSHOT.jar
       ` to run a third one in a different consumer group for both channels
 3. Start the *publishers*
     * `java -jar timesender/target/timesender-0.0.1-SNAPSHOT.jar`
